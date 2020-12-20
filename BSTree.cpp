@@ -33,7 +33,7 @@ void insertar(int valor,node &root){
 //	Preorden 		(R) I D
 //	Inorden  		I (R) D *
 //	Postorden		I D (R)	
-
+/*
 void preorden(node root){
 	if(root != NULL){
 		cout<<root->valor<<", ";
@@ -56,7 +56,7 @@ void postorden(node root){
 		postorden(root->right);
 		cout<<root->valor<<", ";
 	}
-}
+}*/
 
 bool buscar(node root,int numero){
 	if(root != NULL){
@@ -73,44 +73,40 @@ bool buscar(node root,int numero){
 	return false;
 }
 
-int main(){
-	
+
+int main(int argc, char **argv){
+	struct timespec st, et;
+	double t;
+
+	int size = atoi(argv[1]); // numero de elementos
+	int num_ops = atoi(argv[2]); // numero de búsquedas
+
 	node arbol = NULL;
-	vector<int> array;
-	int size,valor,i,aux;
-	ifstream fin("input.txt");
-	fin>>valor;
-	fin>>size;
+
+	int *array = (int *) malloc(sizeof(int)*size);
+	int i,aux,temp;
+
+	ifstream fin("input_10500000.txt");
+
 	for(i=0;i<size;i++){
 		fin>>aux;
-		array.push_back(aux);
+		array[i] = aux;
 	}
 
-	/*int array[] = {35,15,80,10,20,18,17,50,100,70,40};
-	int sizeArray = (sizeof(array)/sizeof(*array));
-	
-	for(int i=0 ; i < sizeArray; i++){
-		insertar(array[i],arbol);
-	}*/
+	clock_gettime(CLOCK_MONOTONIC, &st);
 
 	for(i=0;i<size;i++){
 		insertar(array[i],arbol);
-	}
-	
-	cout<<"			+-------------------------------+"<<endl;
-	cout<<"			|   Arbol Binario de Busqueda   |"<<endl;
-	cout<<"			+-------------------------------+"<<endl;
+	}	
 
-	cout<<endl<<"PREORDEN : "<<endl;
-	preorden(arbol);
-	cout<<endl<<"INORDEN : "<<endl;
-	inorden(arbol);
-	cout<<endl<<"POSTORDEN : "<<endl;
-	postorden(arbol);
-
-	cout<<endl;
-	cout<< ( buscar(arbol,valor) ? "Valor encontrado  ": "Valor no encontrado " )<<endl;
+	/*for(i=0;i<num_ops;i++){
+		temp = rand() % size + 1;
+		buscar(arbol,temp);
+	}*/
 	
+	clock_gettime(CLOCK_MONOTONIC, &et);
+	t = (et.tv_sec - st.tv_sec) + (et.tv_nsec - st.tv_nsec) / 1000000000.0;
+  	printf("%u;%u;%lf;", size, num_ops, t);
+  	free(array);
 	return 0;
-	
 }

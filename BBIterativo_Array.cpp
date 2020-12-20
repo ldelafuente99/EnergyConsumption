@@ -29,12 +29,13 @@ int main(int argc, char **argv){
 
 	ifstream fin("input_450000.txt");
 
+	clock_gettime(CLOCK_MONOTONIC, &st);
+
 	for(i=0;i<size;i++){
 		fin>>aux;
 		array[i] = aux;
 	}
-	clock_gettime(CLOCK_MONOTONIC, &st);
-
+	
 	for(i=0;i<num_ops;i++){
 		temp = rand() % size + 1;
 		BBIterativo(array,temp,size);

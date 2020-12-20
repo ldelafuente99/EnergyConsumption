@@ -6,7 +6,9 @@ void Merge(int *array, int l, int mitad, int r){
 	int i,j,k;
 	int n1 = mitad - l + 1, n2 = r - mitad;
 
-	int temp1[n1], temp2[n2];
+	//int temp1[n1], temp2[n2]; // modificar
+	int *temp1 =(int *)malloc(sizeof(int)*n1);
+	int *temp2 =(int *)malloc(sizeof(int)*n2);
 
 	for(i=0;i<n1;i++){
 		temp1[i] = array[l+i];
@@ -37,6 +39,9 @@ void Merge(int *array, int l, int mitad, int r){
 		j++;
 		k++;
 	}
+
+	free(temp1);
+	free(temp2);
 }
 
 void MergeSort(int *array, int l, int r){
@@ -56,14 +61,16 @@ int main(int argc, char **argv){
 	int *array = (int *) malloc(sizeof(int)*size);
 	int i,aux,l = 0, r = size-1;
 
-	ifstream fin("input_850000.txt");
+	ifstream fin("input_10500000.txt");
+
+	clock_gettime(CLOCK_MONOTONIC, &st);
+	
 	for(i=0;i<size;i++){
 		fin>>aux;
 		array[i] = aux;
 	}
-	clock_gettime(CLOCK_MONOTONIC, &st);
 	
-	MergeSort(array,l,r);
+	//MergeSort(array,l,r);
 	
 	clock_gettime(CLOCK_MONOTONIC, &et);
 	t = (et.tv_sec - st.tv_sec) + (et.tv_nsec - st.tv_nsec) / 1000000000.0;

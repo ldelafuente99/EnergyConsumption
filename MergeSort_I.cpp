@@ -33,7 +33,7 @@ void merge(int A[], int temp[], int from, int mid, int to, int high)
     A[i] = temp[i];
 }
 
-// Iteratively sort array A[low..high] using temporary array
+// Iteratively sort array A[low..high] using t450porary array
 void mergesort(int A[], int temp[], int low, int high)
 {
   // divide the array into blocks of size m
@@ -63,14 +63,16 @@ int main(int argc, char **argv){
   int *temp = (int *) malloc(sizeof(int)*size);
   int i,aux,l = 0, r = size-1;
 
-  ifstream fin("input_850000.txt");
+  ifstream fin("input_10500000.txt");
+
+  clock_gettime(CLOCK_MONOTONIC, &st);
+
   for(i=0;i<size;i++){
     fin>>aux;
     array[i] = aux;
   }
-  clock_gettime(CLOCK_MONOTONIC, &st);
   
-  mergesort(array,temp,0,size-1);
+  //mergesort(array,temp,0,size-1);
   
   clock_gettime(CLOCK_MONOTONIC, &et);
   t = (et.tv_sec - st.tv_sec) + (et.tv_nsec - st.tv_nsec) / 1000000000.0;
