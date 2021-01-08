@@ -1,3 +1,4 @@
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -27,7 +28,7 @@ int main(int argc, char **argv){
 	int *array = (int *) malloc(sizeof(int)*size);
 	int i,aux,temp;
 
-	ifstream fin("input_450000.txt");
+	ifstream fin("input_850000_16_v1.txt");
 
 	clock_gettime(CLOCK_MONOTONIC, &st);
 

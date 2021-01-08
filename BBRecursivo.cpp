@@ -4,7 +4,7 @@ using namespace std;
 
 int recursivo(int *array, int valor, int l, int r){
 	int mitad = (l+r)/2;
-	if(array[mitad] != valor && l==r){
+	if(array[mitad] != valor && l>=r){
 		return -1;
 	}
 	if(array[mitad] == valor){
@@ -14,6 +14,7 @@ int recursivo(int *array, int valor, int l, int r){
 	}else{
 		return recursivo(array,valor,l,mitad-1);
 	}
+	
 }
 
 int main(int argc, char **argv){
@@ -26,7 +27,7 @@ int main(int argc, char **argv){
 	int *array = (int *) malloc(sizeof(int)*size);
 	int i,aux,temp,l=0,r=size-1;
 
-	ifstream fin("input_450000.txt");
+	ifstream fin("input_10500000_v1.txt");//archivo que recibe del input
 
 	clock_gettime(CLOCK_MONOTONIC, &st);
 	
@@ -34,12 +35,13 @@ int main(int argc, char **argv){
 		fin>>aux;
 		array[i] = aux;
 	}
-
+	/*
 	for(i=0;i<num_ops;i++){
 		temp = rand() % size + 1;
 		recursivo(array,temp,l,r);
+
 	}
-	
+	*/
 	clock_gettime(CLOCK_MONOTONIC, &et);
 	t = (et.tv_sec - st.tv_sec) + (et.tv_nsec - st.tv_nsec) / 1000000000.0;
   	printf("%u;%u;%lf;", size, num_ops, t);

@@ -1,3 +1,4 @@
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -61,7 +62,7 @@ int main(int argc, char **argv){
 	int *array = (int *) malloc(sizeof(int)*size);
 	int i,aux,l = 0, r = size-1;
 
-	ifstream fin("input_10500000.txt");
+	ifstream fin("input_10500000_v1.txt");
 
 	clock_gettime(CLOCK_MONOTONIC, &st);
 	
@@ -71,6 +72,7 @@ int main(int argc, char **argv){
 	}
 	
 	//MergeSort(array,l,r);
+
 	
 	clock_gettime(CLOCK_MONOTONIC, &et);
 	t = (et.tv_sec - st.tv_sec) + (et.tv_nsec - st.tv_nsec) / 1000000000.0;
