@@ -3,19 +3,19 @@
 
 using namespace std;
 
-void BBIterativo(int *array, int valor, int size){
+int BBIterativo(int *array, int valor, int size){
 	int mitad, l = 0, r = size - 1;
 	while(l<=r){
 		mitad = (l+r)/2;
 		if(array[mitad] == valor){
-			return ;
+			return 0;
 		}else if(valor > array[mitad]){
 			l = mitad + 1;
 		}else{
 			r = mitad - 1;
 		}
 	}
-	return ;
+	return -1;
 }
 
 int main(int argc, char **argv){
