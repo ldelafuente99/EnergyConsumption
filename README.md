@@ -13,13 +13,13 @@ _Se realizaron análisis sobre algunos algoritmos de ordenamiento y búsqueda._
   - Counting Sort
   - Heap Sort
 
-##Algoritmos de búsquedas
+## Algoritmos de búsquedas
   
   - Binary Search Iterativo
   - Binary Search Recursivo
   - Binary Search Tree
 
-##Nombre del archivo utilizado para cada algoritmo
+## Nombre del archivo utilizado para cada algoritmo
  - Merge Sort Iterativo -> MergeSortIterativo.cpp
  - Merge Sort Recursivo -> MergeSortRecursivo.cpp
  - Counting Sort -> CountingSort.cpp
@@ -28,11 +28,11 @@ _Se realizaron análisis sobre algunos algoritmos de ordenamiento y búsqueda._
  - Binary Search Recursivo -> BBRecursivo.cpp
  - Binary Search Tree -> BSTree.cpp
 
-##Observacion
+## Observacion
 
 _Para el algoritmo de Binary Search Tree se modifico el codigo para agregar una métrica adicional de tiempo, para lo cual se creó otra versión de la implementación con nombre_ BSTree_Exp2.cpp._ 
 
-##Compilación
+## Compilación
 
 ´´´
 Para cada función Main se debe modificar el nombre del archivo de entrada, los cuales se encuentran en el siguiente enlace:_ https://cutt.ly/fnUyhgq
