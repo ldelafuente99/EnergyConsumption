@@ -6,7 +6,7 @@ _Proyecto de memoría de título para optar al grado de Ingeniero Civil Informá
 
 _Se realizaron análisis sobre algunos algoritmos de ordenamiento y búsqueda._
 
-##Algoritmos de ordenamiento
+## Algoritmos de ordenamiento
 
   - Merge Sort Iterativo
   - Merge Sort Recursivo
@@ -35,7 +35,7 @@ _Para el algoritmo de Binary Search Tree se modifico el codigo para agregar una 
 ## Compilación
 
 ```
-Para cada función Main se debe modificar el nombre del archivo de entrada, los cuales se encuentran en el siguiente enlace:_ https://cutt.ly/fnUyhgq
+Para cada función Main se debe modificar el nombre del archivo de entrada, los cuales se encuentran en el siguiente enlace: https://cutt.ly/fnUyhgq
 ```
 ```
 Compilar el algoritmo como:
