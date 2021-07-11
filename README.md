@@ -2,7 +2,7 @@
 
 _Proyecto de memoría de título para optar al grado de Ingeniero Civil Informático de la Universidad de Concepción por parte de Leonardo De La Fuente. Profesor guía José Fuentes. Colaborador Zheng Li._
 
-##Algoritmos
+## Algoritmos
 
 _Se realizaron análisis sobre algunos algoritmos de ordenamiento y búsqueda._
 
