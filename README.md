@@ -1,10 +1,10 @@
 # Medición sistemática del consumo energético de algoritmos de ordenamiento y búsqueda
 
-_Proyecto de memoría de título para optar al grado de Ingeniero Civil Informático de la Universidad de Concepción por parte de Leonardo De La Fuente. Profesor guía José Fuentes. Colaborador Zheng Li.
+_Proyecto de memoría de título para optar al grado de Ingeniero Civil Informático de la Universidad de Concepción por parte de Leonardo De La Fuente. Profesor guía José Fuentes. Colaborador Zheng Li._
 
 ##Algoritmos
 
-_Se realizaron análisis sobre algunos algoritmos de ordenamiento y búsqueda
+_Se realizaron análisis sobre algunos algoritmos de ordenamiento y búsqueda._
 
 ##Algoritmos de ordenamiento
 
@@ -30,7 +30,7 @@ _Se realizaron análisis sobre algunos algoritmos de ordenamiento y búsqueda
 
 ##Observacion
 
-_Para el algoritmo de Binary Search Tree se modifico el codigo para agregar una métrica adicional de tiempo, para lo cual se creó otra versión de la implementación con nombre_ BSTree_Exp2.cpp 
+_Para el algoritmo de Binary Search Tree se modifico el codigo para agregar una métrica adicional de tiempo, para lo cual se creó otra versión de la implementación con nombre_ BSTree_Exp2.cpp._ 
 
 ##Compilación
 
