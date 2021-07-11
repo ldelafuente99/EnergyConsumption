@@ -36,8 +36,12 @@ _Para el algoritmo de Binary Search Tree se modifico el codigo para agregar una 
 
 ```
 Para cada función Main se debe modificar el nombre del archivo de entrada, los cuales se encuentran en el siguiente enlace:_ https://cutt.ly/fnUyhgq
+```
+```
 Compilar el algoritmo como:
   - g++ nombre_del_algoritmo.cpp -o nombre_ejecutable
+```
+```
 Existen dos script en bash, uno para los algoritmos de ordenamiento (run_exps_ordenar.sh) y otro para los algoritmos de búsqueda (run_exps_búsqueda.sh), para los cuales se debe ingresar el nombre del ejecutable.
 ```
 
