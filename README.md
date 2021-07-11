@@ -20,13 +20,13 @@ _Se realizaron análisis sobre algunos algoritmos de ordenamiento y búsqueda._
   - Binary Search Tree
 
 ## Nombre del archivo utilizado para cada algoritmo
- - Merge Sort Iterativo -> MergeSortIterativo.cpp
- - Merge Sort Recursivo -> MergeSortRecursivo.cpp
- - Counting Sort -> CountingSort.cpp
- - Heap Sort -> HeapSort.cpp
- - Binary Search Iterativo -> BBIterativo.cpp
- - Binary Search Recursivo -> BBRecursivo.cpp
- - Binary Search Tree -> BSTree.cpp
+ - Merge Sort Iterativo       -> MergeSortIterativo.cpp
+ - Merge Sort Recursivo       -> MergeSortRecursivo.cpp
+ - Counting Sort              -> CountingSort.cpp
+ - Heap Sort                  -> HeapSort.cpp
+ - Binary Search Iterativo    -> BBIterativo.cpp
+ - Binary Search Recursivo    -> BBRecursivo.cpp
+ - Binary Search Tree         -> BSTree.cpp
 
 ## Observacion
 
