@@ -45,4 +45,5 @@ Compilar el algoritmo como:
 Existen dos script en bash, uno para los algoritmos de ordenamiento (run_exps_ordenar.sh) y otro para los algoritmos de búsqueda (run_exps_búsqueda.sh), para los cuales se debe ingresar el nombre del ejecutable.
 ```
 
-
+---
+Todo el material se encuentra a libre uso y disposición.
